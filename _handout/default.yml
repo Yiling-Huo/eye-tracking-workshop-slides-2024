@@ -1,0 +1,4 @@
+reference-links: true
+pdf-engine: xelatex
+citeproc: true
+number-sections: true
