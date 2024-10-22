@@ -8,7 +8,7 @@ csl: elsevier-vancouver.csl
 reference-section-title: "References"
 
 nocite: |
-  @carrasco2011visual, @carter2020best, @duchowski2017eye, @rayner1998eye, @richardson2004eye, @tanenhaus2007eye, @jarodzka2017tracking
+  @carrasco2011visual, @carter2020best, @duchowski2017eye, @jarodzka2017tracking, @rayner1998eye, @richardson2004eye, @tanenhaus2007eye, 
 
 # Pandoc md YAML
 geometry: "left=2cm,right=2cm,top=2.5cm,bottom=2cm"
@@ -101,7 +101,7 @@ During the reading process, a saccade typically spans about seven to nine letter
 
 Fixation patterns during reading is influenced by various factors, including the legibility of the text and the syntactic and conceptual difficulty of the material. Although readers typically move their eyes forward, some saccades are regressive, meaning they move backward. These regressive saccades often indicate processing difficulties during reading.
 
-Eye tracking has significantly deepened our understanding of how comprehenders process language during reading. These studies can be divided into different levels: research on reading ingle words or sentences, research on reading and comprehending a whole text, and research on reading and processing involving several text documents. 
+Eye tracking has significantly deepened our understanding of how comprehenders process language during reading. These studies can be divided into different levels: research on reading single words, sentences, and research on reading and comprehending a whole text or multiple texts. 
 
 Eye-tracking in reading also has many practical applications in educational psychology, such as identifying successful and struggling students and diagnosing reading disorders such as dyslexia.
 

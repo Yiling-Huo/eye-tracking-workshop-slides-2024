@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the Eye-tracking Method and its Application in Language Research"
+title: "The Eye-tracking Method and its Application in Language Research"
 subtitle: "Day 2: Reading"
 author: "Yiling Huo"
 date: \today
@@ -12,21 +12,21 @@ header-includes:
   - \usepackage{fancyhdr}
 
 nocite: |
-  @li2022universal, @rayner1998eye, @satub2015reading, @schotter2015work
+  @clifton2007eye, @li2022universal, @jarodzka2017tracking, @rayner1998eye, @satub2015reading, @schotter2015work
 
 # Pandoc md YAML
 geometry: "left=2cm,right=2cm,top=2.5cm,bottom=2cm"
 
-# cd github\eye-tracking-workshop-slides\_handout
+# cd github\eye-tracking-workshop-slides-2024\_handout
 
-# pandoc day2.md -o day2.pdf -d default.yml -V papersize:a4
+# pandoc week2.md -o week2.pdf -d default.yml -V papersize:a4
 ---
 
 \pagestyle{fancy}
 \lhead{}
-\fancyhead[R]{UCL Linguistics Autumn School 2023}
+\fancyhead[R]{UCL Linguistics Short Courses 2024}
 
-# Eye movements in reading: fundamental characteristics
+# Basic patterns and measurements
 
 Someone with no knowledge of eye movements may have the impression that during reading, the eye sweeps across the text continuously; this impression is of course an illusion. Like in unconstrained scene-viewing, eye movements in reading consist of a series of fixations and saccades. 
 
@@ -36,7 +36,7 @@ Someone with no knowledge of eye movements may have the impression that during r
 > - *Return sweeps* refers to the eye movement from the end of one line to the beginning of the next. They usually start from 5-7 letters before the end of a line to 3-7 letters after the beginning of the next line. 
 > - There are considerable individual differences in terms of average fixation duration and saccade length in reading. 
 
-You may have noticed that saccade length is measured in letter spaces rather than viewing angles in reading. This is because saccade length during reading is relatively unaffected by the retinal size of the text: the eye moves about 7-9 letters with each saccade regardless of whether the text is 36cm to the eye or 72cm (or size 36 or size 72). 
+You may have noticed that saccade length is measured in letter spaces rather than viewing angles in reading. This is because saccade length during reading is relatively unaffected by the retinal size of the text: the eye moves about 7-9 letters with each saccade regardless of whether the text is 36cm to the eye or 72cm (or size 36 vs. 72). 
 
 Eye movements are not exactly the same across different writing systems. For example, readers of Chinese (where a character corresponds to a morpheme) typically move their eyes about 2 characters with a saccade; and readers of Japanese (where a character corresponds to a morpheme (*kanji*) or a syllable (*kana*)) have an average saccade length of 3.5 characters. In Hebrew, where vowels are often not represented orthographically, the average saccade length is also shorter than in English (5.5 characters/letters vs. 7-9 letters). The difference in saccade length across languages can be attributed to the difference in information density: while a word is on average 5 letters in English, it is about 2 characters in Chinese and Japanese. When the number of words is considered rather than the number of letters/characters, the average saccade lengths in English, Chinese, Japanese, and Hebrew are roughly comparable [@schotter2015work]. 
 
@@ -49,16 +49,14 @@ Eye movements are not exactly the same across different writing systems. For exa
 > - Gaze duration: the sum of all fixations on a word prior to moving to another word. 
 > - Probability of skipping: the probability that the reader does not fixate on a word/region when moving from left to right across a text (if language is written left-to-right). 
 > 
-> On the region of interest (ROI) level:
+> On the sentence / region of interest (ROI) level:
 > 
 > - First-pass duration: the amount of time from when a reader first fixates on a region to when they first leave that region.
 > - Go-past duration/Regression path duration: the amount of time from when a reader first fixates on a region to when they first leave that region to the right (if language is written left-to-right). 
 > - Second-pass duration: the sum of all refixations on a region of text after the eye has already moved past that region in the text. 
 > - Total duration: the sum of initial processing of a target region (i.e., first-pass duration) and any subsequent rereading of that region (i.e., second-pass duration). 
 
-# Eye movements in reading: more details
-
-## Foveal vs. parafoveal vision in reading
+# Foveal vs. parafoveal vision in reading
 
 The fovea is where visual acuity is the highest and vision the sharpest, but it is not the only region on the retina where information can be obtained. During scene perception, it has been shown that information of all levels can be processed parafoveally (i.e. information can be obtained from the parafovea, the region that circumscribes the fovea), from low-level features such as colour and orientation to high-level information such as semantic meaning (the gist of a scene). 
 
@@ -66,11 +64,11 @@ The fovea is where visual acuity is the highest and vision the sharpest, but it 
 
 ![The foveal, parafoveal, and peripheral regions when three characters make up 1° of visual angle. The eye icon and dotted line represent the location of fixation. Extract from @schotter2012parafoveal. \label{parafoveal-vision}](img/parafoveal-vision.png){width=50%}
 
-### Experimental paradigms
+## Experimental paradigms
 
 A type of experimental paradigm that has been very successful in investigating foveal vs. parafoveal vision in reading is called the gaze-contingency paradigm, in which the visual display changes depending on where the reader is looking. Here are some main types of this paradigm.
 
-#### Moving window/moving mask paradigms {-}
+### Moving window/moving mask paradigms {-}
 
 How do foveal and parafoveal visions contribute to reading? A clever way to investigate this is to dissociate these two types of vision in the laboratory. In the moving window paradigm, valid information is only provided within a window area around the gaze location, with the text outside the window replaced by other letters. Conversely, in the moving mask paradigm, foveal letters are masked while only letters in the parafovea and the periphery are retained. 
 
@@ -78,23 +76,23 @@ How do foveal and parafoveal visions contribute to reading? A clever way to inve
 
 ![The moving mask paradigm. Extract from @rayner2023sir. \label{moving-mask}](img/moving-mask.jpg){width=50%}
 
-#### Boundary paradigm {-}
+### Boundary paradigm {-}
 
 In the boundary paradigm, a target word is replaced by a preview word while the reader fixates on the prior parts of the text. When the reader's eye passes an invisible boundary, the preview changes to the target. If the target is processed faster (i.e. shorter fixation times) when the preview is related compared with when it was unrelated, there has been a preview benefit. 
 
 ![The boundary paradigm. Extract from @blythe2014developmental. \label{boundary-paradigm}](img/boundary-paradigm.jpeg){width=40%}
 
-### Perceptual span in reading
+# Perceptual span in reading
 
 Perceptual span refers to the area from which readers can obtain useful information. An abundance of studies have investigated the size of perceptual span during reading, mainly using the moving window/moving mask paradigm. The perceptual span is asymmetrical around the centre of fixation. In English, the perceptual span during reading is about 3 to 4 letters to the left of the current fixation and 14 to 15 letters to the right, i.e. from the beginning of the current word to 2 words to the right. In languages written right-to-left, the perceptual span is reversed [@schotter2015work]. 
 
-#### Foveal vs. parafoveal vision within the perceptual span {-}
+## Foveal vs. parafoveal vision within the perceptual span {-}
 
 Results from moving mask experiments have shown that foveal processing is vital in reading while parafoveal processing is beneficial but also has limitations. When the moving mask is small enough to allow some letters into the fovea, participants read at a reduced rate but can still obtain information. As the size of the mask increases, reading efficiency drops rapidly. When the mask covers the entire fovea but only some of the parafovea, readers make large numbers of errors when reporting the sentence. 
 
 While parafoveal vision has many limitations, the boundary paradigm has shown that quite a few types of information can be processed parafoveally during reading. Preview benefits can be obtained from previews that overlap with the target word in terms of orthography [@balota1985interaction], phonology [@pollatsek1992phonological], as well as morphology (especially in languages such as Chinese where morphological structure plays a more important role in word recognition)[@yen2008eye]. 
 
-## The control of eye movement in reading
+<!-- ## The control of eye movement in reading
 
 ### Where to move the eyes {-}
 
@@ -112,121 +110,39 @@ When we move on to the next word during reading (i.e. the fixation duration of t
 
 The effect of linguistic variables on fixation duration is influenced by task. For example, when the participant is tasked to search for a particular word in a text, the effect of word frequency on fixation duration becomes very small; while the same effect of word frequency is exaggerated when the task is to proofread or detect spelling errors. 
 
-Results from disappearing text experiments (where the fixated word disappears or is masked a short time after it is fixated) show that readers only need 50-60ms to get the visual information necessary to identify the fixated word. Therefore, it seems that readers normally spend much longer time fixating on a word than what's needed for extracting visual information (i.e. more processing happens during a fixation than simply extracting visual information). 
+Results from disappearing text experiments (where the fixated word disappears or is masked a short time after it is fixated) show that readers only need 50-60ms to get the visual information necessary to identify the fixated word. Therefore, it seems that readers normally spend much longer time fixating on a word than what's needed for extracting visual information (i.e. more processing happens during a fixation than simply extracting visual information).  -->
 
-# Sentence processing during reading
+# Eye movements and language processing: Word recognition
 
-To understand a text, recognizing the words is only the first step. The reader must also analyze the grammatical structure of each sentence and identify each word's place in this structure (*syntactic parsing*), as well as combine the meaning of individual words and phrases to construct a representation of the sentence's overall meaning (*semantic interpretation*). 
+Research has shown that reading time on the word level is influenced by a variety of factors, including word frequency, word familiarity, age of acquisition, lexical ambiguity, and contextual plausibility. These factors are believed to impact the process of word recognition (as opposed to later processes such as interpretation or integration), as reflected in early eye movement measures such as first fixation, single fixation, and gaze duration. 
 
-In general, syntactic parsing and semantic interpretation are quick and effortless during reading, in fact as readers, we are usually unaware of these processes. However, by introducing difficulties in these processes and causing sentence processing to break down, we can get insight into how the sentence processing system works. For example, consider (\ref{reduced-relative}): 
+#### Word Frequency and Length {-}
 
-```{=latex}
-\begin{exe}
-\ex
-\label{reduced-relative}
-The horse raced past the barn fell. 
-\end{exe}
-```
+One of the most well-documented factors affecting reading time is **word frequency**: the more frequent a word is, the less time readers spend processing it [@just1980theory]. However, word frequency is often confounded with **word length** in natural language, since longer words tend to appear less frequently. Even when controlling for word length, word frequency continues to significantly impact reading time. For example, Rayner's research indicates that the size of the frequency effect is 20–40 ms in first fixation duration and 30–90 ms in gaze duration [@rayner1986lexical; @inhoff1986parafoveal].
 
-This sentence is difficult to understand, as the initial interpretation of the verb *raced* is ambiguous: it can be the main verb, or the beginning of a reduced relative clause that modifies *horse*. The parser (the reader) usually tends to initially interpret the verb *raced* as the main verb, but this analysis leaves no place in the sentence for the verb *fell*, at which point the parser has to go back and reinterpret *raced*. This type of sentence that has an attractive initial syntactic analysis that turns out to be wrong is called a *garden path* sentence. Garden path sentences as well as other types of sentences that introduce processing difficulty have been popular tools in the sentence processing literature. Today we will introduce a few core questions in sentence processing and how eye-tracking evidence has contributed to these questions. 
+Interestingly, the frequency effect diminishes with repetition: after a word is encountered a few times in a passage, the difference in reading time between frequent and infrequent words becomes negligible by the third instance [@rayner1995eye].
 
-## Sentence processing vs. visual word recognition
+#### Word Familiarity and Age of Acquisition {-}
 
-Is there a separate visual word recognition system that this system delivers an output that becomes the input to the system or systems that perform syntactic parsing and semantic interpretation (as sentence-processing researchers sometimes assume)? Or is word recognition itself affected by a word's syntactic and semantic context? Clear evidence shows that the resolution of lexical ambiguity is affected by context (e.g. context helps the reader determine whether *bank* denotes a financial institution or the edge of a river) [@duffy1988lexical]. But what about more usual cases where there is no lexical ambiguity? 
+Independently, **word familiarity** has been shown to have an impact on reading times, as well, with readers spending less time on more familiar words [@williams2004eye; @chaffin2001learning]. In addition, **age-of-acquisition** can affect how long it takes to process a word, and thus has an effect on reading times, as shown by Juhasz and Rayner [@juhasz2003investigating; @juhasz2006role]. 
 
-Consider the word *oven* in (\ref{oven}). *Oven* is much more predictable in (\ref{oven1}) than (\ref{oven2}). If word recognition is affected by context, then *oven* should be easier to recognize in (\ref{oven1}) than (\ref{oven2}). It is established that there is a logarithmic relationship between reading time and a word's predictability: reading time is a negative linear function of log predictability [@smith2013effect] (the more predictable a word is, the less time is spent on reading it). 
+#### Lexical Ambiguity {-}
 
-```{=latex}
-\begin{exe}
-\ex
-\label{oven}
-\begin{xlist}
-\ex
-\label{oven1}
-The woman took the warm cake out of the oven and frosted it. \\
-\ex
-\label{oven2}
-The woman walked over to the oven and opened it. \\
-\end{xlist}
-\end{exe}
-```
+The presence of **lexical ambiguity**—when a word has multiple meanings—can further influence reading times. Words that are balanced in ambiguity (i.e., where multiple meanings are equally likely) tend to be read more slowly than unambiguous words or biased ambiguous words (those with a clear dominant meaning) [@sereno2006eye].
 
-Does this mean that word recognition is affected by the context? It is worth pointing out that the effect of predictability on reading time doesn't *have to* be seen as an effect on the process of word recognition itself. To show this we turn to a factor that has been shown to reliably affect word recognition: word frequency; the more frequent a word is, the easier it is to recognize [@rayner1996eye]. If predictability also affects word recognition, then these two effects might interact: the difference in reading time between frequent vs. infrequent words may be smaller when the words are highly predictable, and larger when the words are unpredictable. If we manage to find an interaction, then we'll have support for an effect of predictability on word recognition. However, evidence suggests that these two effects on reading time are additive rather than interactive: even when predictability is high, the effect of word frequency is not attenuated [@ashby2005eye]. Therefore, the effect of predictability on reading time may not necessarily be on word recognition itself, but rather *postlexical*, after a word has already been identified. 
+#### Morpheme frequency {-}
 
-In sum, it remains unclear whether context information has an effect on the process of visual word recognition itself. 
+There is evidence that readers decompose words into their constituent morphemes while reading. Research shows that the **frequency of individual morphemes** affects reading times independently of overall word frequency [@pollatsek2005role; @hyona1998reading; @andrews2004eye]. This effect occurs not only with transparent compound words (e.g., punishment = punish+ment), but also with opaque compounds (e.g., casualty $\neq$ casual+ty), suggesting that readers may routinely decompose compound words, even when it doesn’t aid in lexical processing [@pollatsek2005role].
 
-## Incrementality in sentence processing
+#### Contextual constraint {-}
 
-One of the first questions to ask about sentence processing is whether syntactic and semantic interpretations are *incremental*, i.e., whether we interpret each word as soon as it is recognized, or we wait till the end of a clause/sentence. On the one hand, processing sentences on a word-by-word basis may be an efficient way to use our time; on the other hand, attempting to interpret a sentence before the end may lead to more errors. 
+Finally, the time spent on reading a word is affected by **context**. A considerable amount of research has shown that words that are predictable from the preceding context are looked at for less time than words that are not predictable [e.g. @ehrlich1981contextual; @rayner2004effects]. 
 
-The last few decades of research have provided abundant evidence that sentence processing is indeed incremental, that there is no measurable lag between recognizing a word and attempting to integrate it into a sentence-level syntactic analysis as well as semantic interpretation. 
+# Eye movements and language processing: Sentence processing
 
-Eye-tracking evidence has been very important in establishing the incrementality of sentence processing. For example, Frazier and Rayner @frazier1982making presented participants with sentences such as (\ref{frazier-rayner}). Frazier's garden path theory predicts that upon encountering *a mile*, the parser should initially interpret it as the object of *jogs*. In (\ref{frazier-rayner1}) this turns out correct, but in \ref{frazier-rayner2} this turns out to be wrong when *seems* is encountered. Frazier and Rayner found that immediately upon encountering the word *seems* in (\ref{frazier-rayner2}), readers' eye fixations increased in their duration, and readers were also more likely to make a regressive saccade to an earlier region of the sentence. This suggests that by the time readers encountered the word *seems*, they had already committed to one analysis of the sentence (jogs a mile), which in the case of (\ref{frazier-rayner2}) happened to be the incorrect one. 
+To understand sentences, once a word is recognised, it needs to be integrated into the preceding context for intepretation. 
 
-```{=latex}
-\begin{exe}
-\ex
-\label{frazier-rayner}
-\begin{xlist}
-\ex
-\label{frazier-rayner1}
-Since Jay always jogs a mile this seems like a short distance to him. \\
-\ex
-\label{frazier-rayner2}
-Since Jay always jogs a mile seems like a short distance to him. \\
-\end{xlist}
-\end{exe}
-```
-
-In terms of semantic interpretation, it has been found that the plausibility of a word as a sentence continuation affects eye movements. Implausibility cannot affect eye movements until the reader has actually constructed, or at least entertained, an implausible semantic interpretation; thus the timing of implausibility effects sheds light on how long it takes to integrate a word into a representation of the sentence's meaning. For example, Rayner et al. @rayner2004effect compared reading times on a critical word (e.g. *carrots*) and subsequent material when the word is plausible vs. anomalous:
-
-```{=latex}
-\begin{exe}
-\ex
-\label{rayner2004}
-\begin{xlist}
-\ex
-\label{rayner2004-1}
-John used a knife to chop the large carrots for dinner. \\
-\ex
-\label{rayner2004-2}
-John used a pump to inflate the large carrots for dinner. \\
-\end{xlist}
-\end{exe}
-```
-
-Results showed increased gaze duration/first-pass duration when the target word was anomalous vs. plausible. The early effect of syntactic anomaly (as soon as the reader's first fixation(s), which is around 300ms) suggests that within this time span, the reader has not only extracted a great deal of lexical information from the fixated word, but has also at least begun the process of integrating that word into a representation of the sentence's structure and meaning. 
-
-Overall, sentence processing is shown to be highly incremental. 
-
-## Serial vs. parallel processing
-
-We have concluded that sentence processing is highly incremental, but does the processing system only construct one syntactic analysis and semantic interpretation at a time? Or can the system entertain multiple analyses simultaneously? 
-
-A serial model of sentence processing holds that at any moment, the system maintains only a single analysis of a sentence, and if that analysis is proven incorrect, a new analysis will take its place. Some serial models of sentence processing include Frazier's garden path model [@frazier2016sentence], the ACT-R-based parser [@lewis2013activation], and the rational left-corner parser model [@hale2011rational]. A parallel model of sentence processing, on the other hand, holds that the system may maintain multiple analyses at the same time, with different analyses varying in their degree of activation. In case of ambiguity, more than one analysis of the ambiguous material is constructed and will remain in a state of indecision until clearly disambiguating material is encountered. Models that hold this view include the constraint-based approach to sentence comprehension [@macdonald1994lexical] and the surprisal model [@levy2008expectation]. Some models of sentence processing such as the unrestricted race model [@van2000unrestricted] have a hybrid view, where several analyses race to be constructed at a point of ambiguity, while ultimately only one analysis finally "wins". 
-
-The field has more or less favoured parallel models (constraint-based models) in the past few decades, as these models allow that syntactic parsing may not be deterministic (comprehenders constructing different analyses on different occasions), which is supported by abundant evidence (for an intuitive example, it is not difficult for a reader to get the two readings of (\ref{traxler2}) at the same time) [@satub2015reading]. Further, parallel models allow room for nonstructural factors to play a role in syntactic parsing: for example, the verb *remember* tends to be followed by a direct object (*remembered the story*) while the verb *suspect* tends to be followed by a sentence complement (*He suspects the story is false.*). These lexical biases have been shown to affect syntactic parsing rather quickly [@trueswell1993verb]. 
-
-However, one important observation poses some challenges for parallel models: syntactic ambiguity itself doesn't seem to be costly in terms of reading time [@clifton2008parallelism]. Although ambiguity often results in a higher probability of regressive saccades, reading is generally not disrupted by syntactic ambiguity itself. In fact, there is evidence that some globally ambiguous sentences are actually read faster than their unambiguous counterparts (\ref{traxler2} is read faster than \ref{traxler1}) [@traxler1998adjunct]:
-
-```{=latex}
-\begin{exe}
-\ex
-\label{traxler}
-\begin{xlist}
-\ex
-\label{traxler1}
-The car of the driver with the moustache was pretty cool. \\
-\ex
-\label{traxler2}
-The son of the driver with the moustache was pretty cool. \\
-\end{xlist}
-\end{exe}
-```
-
-As multiple structural analyses compete in parallel models, processing difficulty should be the highest in fully ambiguous sentences where there is roughly equivalent support for different readings (\ref{traxler2}), and difficulty should be the lowest in unambiguous sentences with only one possible reading. This should in turn predict longer reading time in ambiguous vs. unambiguous sentences, which is contrary to the empirical observations. However, proponents of parallel models have also proposed versions of parallel models that are in fact able to account for the ambiguity advantage [@green2006absence]: at least in some parallel models, processing difficulty is not necessarily introduced by the ambiguous input (*moustache* in (\ref{traxler2})), but rather by the competition between a prior interpretation bias and the new interpretation bias introduced by new input (*fell* in (\ref{reduced-relative}) and *seems* in (\ref{frazier-rayner2})). Since (\ref{traxler2}) does not contain such bias-flipping input, processing difficulty does not necessarily need to occur. 
-
-Returning to the issue of nonstructural factors in syntactic parsing, some recent elaborations of serial models [@van2014evidence] hold that parsing decisions are probabilistic rather than deterministic, thus allowing for the participation of nonstructural factors in forming the single fully constructed interpretation. 
+@@@@@
 
 # Summary
 
@@ -236,4 +152,4 @@ Today we have looked at properties of eye movements in reading and how eye movem
 
 Rayner, K. (1998). Eye movements in reading and information processing: 20 years of research. *Psychological bulletin*, 124(3), 372.
 
-Staub, A. (2015). Reading sentences: Syntactic parsing and semantic interpretation. *The Oxford handbook of reading*, 202-216.
+Clifton Jr, C., Staub, A., & Rayner, K. (2007). Eye movements in reading words and sentences. *Eye movements*, 341-371.
