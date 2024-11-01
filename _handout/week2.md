@@ -185,9 +185,7 @@ Since Jay always jogs a mile and a half \textbf{seems like} a very short distanc
 
 The prolonged fixations on the disambiguating region suggest that, when reading (\ref{seem2}), the reader—despite knowing the sentence hasn't ended—has already committed to (or strongly preferred) a specific syntactic analysis of the sentence (namely, interpreting "a mile and a half" as the object of "jogs"). When this interpretation turns out to be incorrect, the reader experiences difficulty at the disambiguating region, as the sentence structure conflicts with their initial parsing.
 
-#### What we learn from difficulties {-}
-
-In general, syntactic parsing and semantic interpretation occur rapidly and effortlessly during reading, so much so that we are typically unaware of these processes. However, when these processes encounter difficulties and sentence comprehension breaks down, we gain valuable insights into the workings of the sentence processing system. Sentences like (\ref{seem2}) and (\ref{reduced-relative}), which initially present an appealing but incorrect syntactic analysis, are known as **garden path sentences**. The processing difficulties these sentences create have proven to be a powerful tool for studying how readers comprehend and resolve complex sentence structures. 
+Sentences like (\ref{seem2}) and (\ref{reduced-relative}), which initially present an appealing but incorrect syntactic analysis, are known as **garden path sentences**. These sentences have been a popular tool to study how humans comprehend language. 
 
 ```{=latex}
 \begin{exe}
@@ -196,6 +194,12 @@ In general, syntactic parsing and semantic interpretation occur rapidly and effo
 The horse raced past the barn fell. 
 \end{exe}
 ```
+
+#### What we learn from difficulties {-}
+
+In general, syntactic parsing and semantic interpretation occur rapidly and effortlessly during reading, so much so that we are typically unaware of these processes. However, when these processes encounter difficulties and sentence comprehension breaks down, we gain valuable insights into the workings of the sentence processing system. In the previous section, we've illustrated garden path sentences and how the difficulties they induce help us understand sentence processing. 
+
+But processing difficulties during reading are very diverse. Next, let's see an example of another type of difficulty (difficulty in reference resolution) has helped us understand the way readers use syntactic constraints during comprehension. 
 
 In a classic study about the time course of sentence comprehension, Sturt [@sturt2003time] tested whether reflexive resolution is guided by grammatical constraints (here, Principle A^[An anaphor must be bound in its binding domain.]). 
 
@@ -206,22 +210,32 @@ In a classic study about the time course of sentence comprehension, Sturt [@stur
 \begin{xlist}
 \ex
 \label{surgeon1}
-The surgeon who treated \textit{Jonathan} had pricked \textit{herself} with a used syringe needle. \\
+\textit{Jonathan} was worried at the hospital. He remembered that \textit{the surgeon} had pricked \textit{herself} with a used syringe needle. \\
 \ex
 \label{surgeon2}
-The surgeon who treated \textit{Jennifer} had pricked \textit{herself} with a used syringe needle. \\
+\textit{Jennifer} was worried at the hospital. She remembered that \textit{the surgeon} had pricked \textit{herself} with a used syringe needle. \\
 \end{xlist}
 \end{exe}
 ```
 
-In both (\ref{surgeon1}) and (\ref{surgeon2}), the reflexive pronoun must refer to *the surgeon*, following Principle A of binding theory. English stereotypes tend to associate surgeons with males, making the interpretation of the reflexive *herself* more challenging compared to the stereotype-consistent *himself*. The key question for Sturt, however, was whether readers consider the distractor noun phrase (*Jonathan* or *Jennifer*) as a potential antecedent for the reflexive. And if they do, whether this distraction occurs before or after grammatical constraints are applied.
+In both (\ref{surgeon1}) and (\ref{surgeon2}), the reflexive anaphor must refer to *the surgeon*, following Principle A of binding theory. English stereotypes tend to associate surgeons with males, making the interpretation of the reflexive anaphor *herself* more challenging compared to the stereotype-consistent *himself*. 
 
-In a series of experiments, Sturt found no effect of distractor gender on early measures, such as the first fixation durations, on the reflexive region. In other words, the initial time readers spend on reading *herself* is the same regardless of whether the distractor was *Jonathan* or *Jennifer*, suggesting readers were not considering the distractors to be possible antecedents at this stage. However, in a later measure—second pass duration—
-Sturt observed that a distractor matching the reflexive's gender (e.g., *Jennifer*) slowed down processing of the anaphor, indicating that at this late stage, readers may have briefly considered the possibility that *herself* referred to *Jennifer*. This finding supports the binding-as-an-initial-filter hypothesis, suggesting that readers use grammatical constraints in the early stages of resolving pronouns and anaphors. Nonetheless, the results also imply that, under certain conditions, readers may have ways to override binding principles if necessary.
+The key question for Sturt, however, was whether readers ever consider the distractor noun phrase (*Jonathan* or *Jennifer*) to be a potential antecedent for the reflexive. The idea is that if readers consider the distractor to be a possible antecedent, then *Jennifer* - the name that matches with the anaphor's gender - should be more distracting than the gender-mismatched name, *Jonathan*. Thus readers should have a harder time telling that *Jennifer* was not the antecedent of *herself*, making sentence (\ref{surgeon2}) more difficult than (\ref{surgeon1}). 
+
+Alternatively, if the reader never considers the distractor to be a possible referent as a result of Principle A, there should be no difference between the two sentences in terms of processing difficulty. 
+
+By using a variety of different eye-tracking measures, Sturt also investigated when the distraction happens - before or after grammatical constraints are applied.
+
+In a series of experiments, Sturt found no effect of distractor gender on early measures such as first fixation durations, on the reflexive region. In other words, the initial time readers spend on reading *herself* is the same regardless of whether the distractor was *Jonathan* or *Jennifer*, suggesting that readers did not consider the distractors to be possible antecedents when they first see the anaphor. 
+
+However, in a later measure—second pass duration—
+Sturt observed that a distractor matching the reflexive's gender (e.g., *Jennifer*) slowed down processing of the anaphor, indicating that at this late stage, readers may have briefly (re-)considered the possibility that *herself* referred to *Jennifer*, following the difficulty associating *herself* with the appropriate referent *the surgeon*. 
+
+These findings support the binding-as-an-initial-filter hypothesis, such that readers quickly apply grammatical constraints in the early stages of resolving pronouns and anaphors. Nonetheless, the results also imply that, under certain conditions, readers may have ways to override binding principles if necessary, at later stages of processing.
 
 #### Variability in eye movement measures {-}
 
-> "The terms "early" and "late" may be misleading, if they are taken to line up directly with first-stage vs. second-stage processes that are assumed in some models of sentence comprehension."[@rayner1983interaction]
+> "The terms “early” and “late” may be misleading, if they are taken to line up directly with first-stage vs. second-stage processes that are assumed in some models of sentence comprehension."[@rayner1983interaction]
 
 Research on sentence processing using eye-tracking has long been challenged by the variability in eye movement measures. There is no clear mapping between eye movement patterns and cognitive processes during reading, and the same experimental manipulations can lead to markedly different eye movement patterns across studies. For instance, when an experimental manipulation yields early effects (such as changes in first fixation or gaze duration), studies often vary a lot in whether these effects are also accompanied by later effects [@clifton2007eye].
 
