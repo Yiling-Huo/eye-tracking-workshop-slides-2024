@@ -16,14 +16,14 @@ nocite: |
 # Pandoc md YAML
 geometry: "left=2cm,right=2cm,top=2.5cm,bottom=2cm"
 
-# cd github\eye-tracking-workshop-slides\_handout
+# cd work\github\eye-tracking-workshop-slides-2024\_handout
 
-# pandoc day3.md -o day3.pdf -d default.yml -V papersize:a4
+# pandoc week3.md -o week3.pdf -d default.yml -V papersize:a4
 ---
 
 \pagestyle{fancy}
 \lhead{}
-\fancyhead[R]{UCL Linguistics Autumn School 2023}
+\fancyhead[R]{UCL Linguistics Short Courses 2024}
 
 Research on eye movements in reading has a history of more than a century. In contrast, eye movements have only started to become a popular measure in studies of spoken language processing within the last couple of decades. In these studies, participants' eye movements to a visual display are recorded as they follow instructions, listen to sentences, or generate utterances about the "visual world". The visual world paradigm allows researchers to study real-time language comprehension and production in natural tasks. Today we will first talk about components of the visual world paradigm, before discussing (only a fraction of) the most classic or interesting research questions that it has been used to address. 
 
