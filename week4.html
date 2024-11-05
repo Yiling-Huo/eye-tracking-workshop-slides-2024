@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Week 4 The Eye-tracking Method and its Application in Language Research</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white-cus.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <h2>Week 4</h2>
+                    <h3>Eye-tracking with Neuroimaging</h3>
+					<!-- <p><img src="assets/feedback-day-2.png" width="15%"></p> -->
+                </section>
+				<section>
+					<h3>Today's roadmap</h3>
+                    <ul>
+                        <li class="fragment">Neuroimaging in language research: an overview</li>
+                        <li class="fragment">Eye movement data vs. Neuroimaging data</li>
+                        <li class="fragment">Co-registration of eye movements and neuroimaging data</li>
+                        <li class="fragment">Case Study: In Search of Prediction during Language Processing</li>
+                    </ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+                    <h3>Neuroimaging in language research</h3>
+                </section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Electroencephalography (EEG)</h4>
+					<ul>
+						<li class="fragment">Recording of spontaneous electrical activity of the brain</li>
+						<li class="fragment" style="list-style-type: none;"><img src="assets/biosemi-setup.gif" width="45%"><img src="assets/eeg1.png" width="50%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Electroencephalography (EEG)</h4>
+					<ul>
+						<li class="fragment">Recording of spontaneous electrical activity of the brain</li>
+						<li class="fragment"><b>High temporal resolution</b>: data at millisecond scale</li>
+                        <li class="fragment">Low spatial resolution: difficult to locate the signal's origin</li>
+                        <li class="fragment">Non-invasive: safe for the participant</li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Event-related Potentials (ERPs)</h4>
+					<ul>
+						<li class="fragment">EEG signals time-locked to the onset of an <em>event</em></li>
+                        <li class="fragment">Averaged ERP response consist of <em>components</em></li>
+						<li class="fragment" style="list-style-type: none; text-align: center;"><img src="assets/erp-components.png" width="45%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>The N400 and lexical/semantic processing</h4>
+					<ul>
+						<li class="fragment">A negative-going ERP component peaking around 400ms after stimulus onset</li>
+						<li class="fragment">Larger N400 response to unexpected than expected words</li>
+                        <li class="fragment" style="list-style-type: none;">(1a) I take coffee with cream and <em>sugar</em>.</li>
+                        <li class="fragment" style="list-style-type: none;">(1b) I take coffee with cream and <em>socks</em>.</li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>The N400 and lexical/semantic processing</h4>
+					<ul>
+						<li >A negative-going ERP component peaking around 400ms after stimulus onset</li>
+						<li>Larger N400 response to unexpected than expected words</li>
+                        <li style="list-style-type: none; text-align: center;"><img src="assets/n400.png" width="65%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Functional Magnetic Resonance Imaging (fMRI)</h4>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Magnetic Resonance Imaging (MRI)</h4>
+                    <ul>
+						<li class="fragment">Strong magnetic fields causing hydrogen protons to align</li>
+						<li class="fragment">Radio frequency (RF) pulses excite the protons</li>
+                        <li class="fragment">Protons emit a signal when returning from excited to equilibrium state</li>
+                        <li class="fragment">Scanner captures this signal and computes images</li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Magnetic Resonance Imaging (MRI)</h4>
+                    <ul>
+						<li style="list-style-type: none; text-align: center;"><img src="assets/mri.jpg" width="45%"><img src="assets/brain-mri.png" width="55%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Functional Magnetic Resonance Imaging (fMRI)</h4>
+                    <ul>
+						<li class="fragment">A way to acquire MRI images that measures <b>blood-oxygen-level dependent</b> (BOLD) signals</li>
+						<li class="fragment">Provides indirect measure of neural activity:</li>
+                        <li class="fragment">When a brain region is activated, it calls for more blood flow</li>
+                        <li class="fragment">Which can be measured by the scanner</li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Functional Magnetic Resonance Imaging (fMRI)</h4>
+                    <ul>
+                        <li class="fragment"><b>High spatial resolution</b>: images at millimetre scale</li>
+                        <li class="fragment">Low temporal resolution: blood reactions are slow</li>
+                        <li class="fragment">Non-invasive: safe for the participant</li>
+						<li style="list-style-type: none; text-align: center;"><img src="assets/fmri-data.jpg" width="45%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="1">
+					<h3>Neuroimaging in language research</h3>
+                    <h4>Functional Magnetic Resonance Imaging (fMRI)</h4>
+                    <ul>
+                        <li>The language network: </li>
+						<li style="list-style-type: none; text-align: center;"><img src="assets/skeide2016language.webp" width="70%"></li>
+					</ul>
+				</section>
+                <section data-auto-animate data-auto-animate-id="2">
+                    <h3>Eye movement vs. Neuroimaging</h3>
+                </section>
+                <section data-auto-animate data-auto-animate-id="2">
+                    <h3>Eye movement vs. Neuroimaging</h3>
+                    <ul>
+                        <li class="fragment">Research benefits from the <b>complementarity</b> of different methods</li>
+                        <li class="fragment">Eye movement data can be discussed alongside neuroimaging data</li>
+                        <li class="fragment">
+                            For example, comparing predictable and unpredictable words, we find:
+                            <ul>
+                                <li>Shorter reading times</li>
+                                <li>Smaller barin responses (N400)</li>
+                            </ul>
+                        </li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="3">
+                    <h3>Co-registration</h3>
+                </section>
+                <section data-auto-animate data-auto-animate-id="3">
+                    <h3>Co-registration</h3>
+                    <ul>
+                        <li class="fragment">Advances in technology allows direct combination of eye-tracking and neuroimaging</li>
+                        <li class="fragment">In this case, eye-tracking serves as an index of <em>what</em> is being processsed</li>
+                        <li class="fragment">And neuroimaging provides information about <em>how</em> the visual information is processed</li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="3">
+                    <h3>Co-registration</h3>
+                    <h4>Eye-tracking with EEG</h4>
+                    <ul>
+                        <li class="fragment">Traditional ERP experiment use <em>rapid serial visual presentation</em> (RSVP)</li>
+                        <li class="fragment">(Because eye movements can distort EEG signals)</li>
+                        <li class="fragment">But RSVP differs from natural reading experiences</li>
+                        <li class="fragment" style="list-style-type: none; text-align: center;"><img src="assets/rssvp.jpg" width="45%"></li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="3">
+                    <h3>Co-registration</h3>
+                    <h4>Eye-tracking with EEG</h4>
+                    <ul>
+                        <li class="fragment">Eye-tracking-EEG coregistration allows EEG recording in natural reading tasks</li>
+                        <li class="fragment">Fixation-related potentials (FRPs)</li>
+                        <li class="fragment" style="list-style-type: none; text-align: center;"><img src="assets/eye-tracking-eeg.jpg" width="40%"></li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="3">
+                    <h3>Co-registration</h3>
+                    <h4>Eye-tracking with fMRI</h4>
+                    <ul>
+                        <li class="fragment">Although traditional fMRI experiments use <em>block designs</em></li>
+                        <li class="fragment"><em>Event-related fMRI</em> allows more subtle manipulations</li>
+                        <li class="fragment">But without eye-tracking, event-related fMRI suffer from the same limitations of RSVP</li>
+                        <li style="list-style-type: none; text-align: center;"><img src="assets/fmri-meg-eyelink-eye-tracker.jpg" width="45%"> <img src="assets/aluminum-uberstand.jpg" width="20%"></li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h3>Case: In Search of Prediction during Language Processing</h3>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>FRPs and the Effect of Predictability</h4>
+                    <p class="fragment" style="text-align: left;">Effects of predictability is well-documented.</p>
+                    <p class="fragment" style="text-align: left;">Pre- vs. Post-lexical effects:</p>
+                    <p class="fragment" style="text-align: left;">Are predictable words simply easier to integrate, or</p>
+                    <p class="fragment" style="text-align: left;">Do people actively predict upcoming language?</p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>FRPs and the Effect of Predictability</h4>
+                    <p class="fragment" style="text-align: left;">Kretzschmar et al. (2009)</p>
+                    <p class="fragment" style="text-align: left;">(2a) The opposite of black is <em>white</em>. <span style="font-size: 80%;">(Expected/ANT)</span></p>
+                    <p class="fragment" style="text-align: left;">(2b) The opposite of black is <em>green</em>. <span style="font-size: 80%;">(Related-unexpected/REL)</span></p>
+                    <p class="fragment" style="text-align: left;">(2c) The opposite of black is <em>cold</em>. <span style="font-size: 80%;">(Unrelated-unexpected/NON)</span></p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>FRPs and the Effect of Predictability</h4>
+                    <p style="text-align: left;">Kretzschmar et al. (2009)</p>
+                    <p class="fragment" style="text-align: left;">An N400 effect is observed at <b>the last fixation before the target word</b> (<em>cold</em> > <em>green</em> = <em>white</em>).</p>
+                    <p class="fragment" style="text-align: left;">At which point lexical processing of the target word hadn't begun (only parafoveal preview). </p>
+                    <p class="fragment" style="text-align: left;">Supporting active prediction of the expected word during reading. </p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>FRPs and the Effect of Predictability</h4>
+                    <p style="list-style-type: none; text-align: center;"><img src="assets/kretzschmar2009results.jpeg" width="55%"></p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>Fixation-related fMRI and Syntactic Prediction</h4>
+                    <p class="fragment" style="text-align: left;">Bonhage et al. (2015)</p>
+                    <p class="fragment" style="text-align: left;">Predictive gaze reading task:</p>
+                    <ul>
+                        <li class="fragment">RSVP up to the pre-final word</li>
+                        <li class="fragment">Delayed display of final word associated with grammatical category</li>
+					</ul>
+                    <p style="list-style-type: none; text-align: center;"><img src="assets/bonhage2015procedure.jpg" width="40%"></p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>Fixation-related fMRI and Syntactic Prediction</h4>
+                    <p style="text-align: left;">Bonhage et al. (2015)</p>
+                    <p style="text-align: left;">Predictive gaze reading task:</p>
+                    <ul>
+                        <li >RSVP up to the pre-final word</li>
+                        <li>Delayed display of final word associated with grammatical category</li>
+                        <li class="fragment">Anticipatory eye movements toward target location accompanying syntactic prediction</li>
+					</ul>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>Fixation-related fMRI and Syntactic Prediction</h4>
+                    <p style="text-align: left;">Bonhage et al. (2015)</p>
+                    <p style="text-align: left;">(3a) Er wollte das wilde Pferd ohne sattel. (Sentence)</p>
+                    <p style="text-align: left;"> &nbsp &nbsp &nbsp &nbsp &nbsp He wanted the wild horse without saddle.</p>
+                    <p style="text-align: left;">(3b) Er wollte das pfirde Sit ohne Wilttel. (Jabberwacky)</p>
+                    <p style="text-align: left;">(3a) Te Teloh wull Pfirter sit nede wildas. (Non-words)</p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>Fixation-related fMRI and Syntactic Prediction</h4>
+                    <p style="text-align: left;">Bonhage et al. (2015)</p>
+                    <ul>
+                        <li class="fragment">Anticipatory eye movements to the correct grammatical category observed for both Sentence and Jabberwacky, supporting syntactic prediction. </li>
+                        <li class="fragment">Fixation-related fMRI reveals brain regions associated with syntactic prediction: </li>
+					</ul>
+                    <p class="fragment"><img src="assets/bonhage2015results.jpg" width="65%"></p>
+                </section>
+                <section data-auto-animate data-auto-animate-id="4">
+                    <h4>Fixation-related fMRI and Syntactic Prediction</h4>
+                    <p style="text-align: left;">Bonhage et al. (2015)</p>
+                    <ul>
+                        <li>Fixation-related fMRI reveals brain regions associated with syntactic prediction. </li>
+                        <li class="fragment">Identified regions are associated with linguistic and non-linguistic processing of sequential information.</li>
+					</ul>
+                    <p><img src="assets/bonhage2015results.jpg" width="65%"></p>
+                </section>
+                <section>
+					<h3>Today's roadmap</h3>
+                    <ul>
+                        <li class="fragment">Neuroimaging in language research: an overview</li>
+                        <li class="fragment">Eye movement data vs. Neuroimaging data</li>
+                        <li class="fragment">Co-registration of eye movements and neuroimaging data</li>
+                        <li class="fragment">Case Study: In Search of Prediction during Language Processing</li>
+                    </ul>
+                    <p class="fragment"><img src="assets/feedback-day-4.png" width="15%"></p>
+				</section>
+			</div>
+            <div class="logo"></div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: 'c/t',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+            Reveal.configure({ pdfSeparateFragments: false });
+		</script>
+	</body>
+</html>
